@@ -1,0 +1,12 @@
+﻿<html>    
+  <head>         
+  <script type="text/javascript">  function okno_zamknij_wrona()   {     window.close()   }  </script>    
+  </head>
+  <body>     
+<input type="button" name="przycisk" value="grafika1" onclick="WinOpen_wrona(' ')"> <br>
+
+window.open("grafika1.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); <br>
+  
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
+  </body>
+  </html>
