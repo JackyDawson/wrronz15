@@ -1,10 +1,28 @@
-﻿<html>    
-  <head>         
-  <script type="text/javascript">  function okno_zamknij_wrona()   {     window.close()   }  </script>    
-  </head>
-  <body>     
-<input type="button" name="przycisk" value="grafika1" onclick="WinOpen_wrona(' ')"> <br>
-
-  <input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
-  </body>
-  </html>
+<html>   
+   <head>         
+   <title> </title>      
+   <script language="JavaScript">              
+   function WinOpen_wrona()                 { 
+window.open("o1.html","granie1","toolbar=no,directories=no,menubar=no,height=350,width=50,top=25,left=250");
+}      
+   function WinOpen_wrona_2(){ 
+window.open("o2.html","beluga1","toolbar=no,directories=no,menubar=no,height=350,width=50,top=25,left=1400");
+} 
+function WinOpen_wrona_3(){ 
+window.open("o3.html","zegar1","toolbar=no,directories=no,menubar=no,height=350,width=50,top=650,left=250");
+}
+function WinOpen_wrona_4(){ 
+window.open("o4.html","koniec","toolbar=no,directories=no,menubar=no,height=350,width=50,top=650,left=1400");
+}
+   </script>    
+	 </head> 
+	 <body>  
+	 
+	 <form>      
+	 <input type="button" name="przycisk" value="grafika1" onclick="WinOpen_wrona(' ')">  
+	 <input type="button" name="przycisk" value="grafika2" onclick="WinOpen_wrona_2(' ')">  
+	 <input type="button" name="przycisk" value="grafika3" onclick="WinOpen_wrona_3(' ')">  
+	 <input type="button" name="przycisk" value="grafika4" onclick="WinOpen_wrona_4(' ')">  
+   </form>
+ </body>
+ </html>

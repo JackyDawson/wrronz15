@@ -1,23 +1,20 @@
 <html>   
    <head>         
    <title>Przykład nr tutaj wpisz odpowiedni nume </title>      
-   <script language="JavaScript">
-	   function WinOpen_wrona()
-	   { 
-window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-	   }      
-	   
-	   function WinOpen_wrona_1()
-	   { 
-window.open("zadanie2.html","okienko2","toolbar=no,directories=no,menubar=no,height=250,width=500,top=250,left=500");
-	   }      
-     </script>    
+   <script language="JavaScript">              
+   function WinOpen_wrona()                 { 
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=250,width=500,top=250,left=500");
+}      
+   function WinOpen_wrona_1(){ 
+window.open("zadanie2.html","okienko2","toolbar=no,directories=no,menubar=no,height=300,width=700,top=400,left=625");
+} 
+   </script>    
 	 </head> 
 	 <body>  
-		 <p">Wrona</p><br>
+	 
 	 <form>      
-	 <input type="button" name="przycisk" value="z1" onclick="WinOpen_wrona('')">  
-	<input type="button" name="przycisk" value="z2" onclick="WinOpen_wrona_1('')">  
+	 <input type="button" name="przycisk" value="zadanie 1" onclick="WinOpen_wrona(' ')">  
+	 <input type="button" name="przycisk" value="zadanie 2" onclick="WinOpen_wrona_1(' ')">  
    </form>
  </body>
  </html>
