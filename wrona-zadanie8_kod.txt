@@ -1,0 +1,15 @@
+<html>
+<body>
+<div style="color:green;font-size:52px;">
+<script language="JavaScript">
+var D1_wro=prompt("D1=","");
+var D2_wro=prompt("D2=","");
+var dni;
+var sek;
+dni=D1_wro-D2_wro;
+sek=dni*24*60*60;
+document.write("sekund od 30 do 28 minelo="+sek+"<br>");
+</script>
+</div>
+</body>
+</html>
