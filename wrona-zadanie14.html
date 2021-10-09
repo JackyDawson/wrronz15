@@ -1,0 +1,32 @@
+<html>
+<body>
+<div style="color:#0066FF;font-size:52px;">
+<script language="JavaScript">
+/* Autor: Bartosz Wrona 3F*/
+var N0_wro=prompt("Podaj ilosc=","");
+var t_wro=prompt("Podaj po ilu latach sprawdzać","");
+var No=parseFloat(N0_wro);
+var t=parseFloat(t_wro);
+var T_wro=prompt("Podaj czas połowicznego rozpadu pierwiastka:","");
+var T=parseFloat(T_wro);
+var lambda=Math.LN2/T;
+var N=Math.pow((1/2),t/T)*No;
+</script>
+<script language="JavaScript">
+document.write("N0="+No+"[sztuk]");
+</script><br>
+<script language="JavaScript">
+document.write("t="+t+"[lat]");
+</script><br>
+<script language="JavaScript">
+document.write("T1/2="+T+"[lat]");
+</script><br>
+<script language="JavaScript">
+document.write("Lambda="+lambda.toFixed(7)+"[1/rok]");
+</script><br>
+<script language="JavaScript">
+document.write("N="+N.toFixed(7)+"[sztuk]");
+</script><br>
+</div>
+</body>
+</html>

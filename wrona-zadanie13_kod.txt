@@ -1,0 +1,18 @@
+<html>
+<body>
+<div style="color:navy;font-size:52px;">
+<script language="JavaScript">
+var a_wro=prompt("Podaj pierwszą liczbe=","");
+var b_wro=prompt("Podaj pierwszą liczbe=","");
+var a=parseFloat(a_wro);
+var b=parseFloat(b_wro);
+var c=a+b;
+var x=(a+b)*2;
+var p=x*2;
+var z=b*b*b;
+var s1=a+x+p+z;
+document.write("("+a+"+"+b+")^"+c+"="+a+"^"+c+"+"+c+"*(("+a+")^"+b+")*("+b+")+"+c+"*("+a+")*(("+b+")^"+b+")+"+b+"^"+c+"="+a+"+"+x+"+"+p+"+"+z+"="+s1+"");
+</script>
+</div>
+</body>
+</html>
