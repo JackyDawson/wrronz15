@@ -1,18 +1,26 @@
 <html>
 <body>
-<div style="color:navy;font-size:45px;">
-<script language="JavaScript">
-var a_wro=prompt("Podaj pierwszą liczbe=","");
-var b_wro=prompt("Podaj pierwszą liczbe=","");
-var a=parseFloat(a_wro);
-var b=parseFloat(b_wro);
-var c=a+b;
-var x=(a+b)*2;
-var p=x*2;
-var z=b*b*b;
-var s1=a+x+p+z;
-document.write("("+a+"+"+b+")^"+c+"="+a+"^"+c+"+"+c+"*(("+a+")^"+b+")*("+b+")+"+c+"*("+a+")*(("+b+")^"+b+")+"+b+"^"+c+"="+a+"+"+x+"+"+p+"+"+z+"="+s1+"");
+<script type="text/javascript">
+function okno_zamknij_wrona()
+{
+window.close()
+}
 </script>
-</div>
+<div style="color:black;font-size:40px;">
+ <script language="JavaScript">
+var d1_wro=prompt("Podaj A=","");
+var d2_wro=prompt("Podaj B=","");
+ var a=parseFloat(d1_wro);
+ var b=parseFloat(d2_wro);
+var s=a*a*a;;
+var c=3*(Math.pow(a, 2))*b;;
+var d=3*a*(Math.pow(b, 2));;
+var e=+Math.pow(b, 3);;
+var g=s+c+d+e;;
+ document.write("A="+a+" B="+b+ "("+a+"+"+b+")^3="+a+"^3+3*(("+a+")^2)*("+b+")+3*("+a+")*(("+b+")^2)+"+b+"^3="+s+"+"+c+"+"+d+"+"+e+"="+g+"<br>");
+
+ </script>
+</div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
 </body>
 </html>
