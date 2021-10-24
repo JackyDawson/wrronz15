@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title> Przykłady dostępu do elementów </title>
+<meta charset="utf-8">
+<style type="text/css">
+</style>
+</head>
+<body>
+<div id="nazwa"></div>
+Cztery sposoby <u>wyprowadzania</u> danych na stronę:<br>
+1. z użyciem dokument.write()<br>
+2. z użyciem okienka alert()<br>
+3. do okienek formularza<br>
+4. do tabeli<br>
+Co to jest funkcja?<br>
+1. Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,<br>
+2. Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,<br>
+3. Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b),<br>
+4. Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.<br>
+Wybrane metody obiektu document<br>
+
+<table border="1">
+<tr>
+<td><center>metoda</center></td><td><center>opis</center></td>
+</tr>
+<tr>
+<td>getElementById(„id”)</td><td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
+</tr>
+<tr>
+<td>getElementByTagName(„znacznik”)</td><td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+</tr>
+<tr>
+<td>getElementByName(„nazwa”)</td><td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
+<u>Właściwości tak pobranego elementu to:</u>
+- innerHTML – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w tabeli,
+- innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,
+- className – umożliwia określenie klasy CSS użytej do prezentacji elementu.
+</body>

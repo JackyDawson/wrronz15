@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title> Przyk³ady dostêpu do elementów </title>
+<meta charset="utf-8">
+<style type="text/css">
+</style>
+</head>
+<body>
+<div id="nazwa"></div>
+Cztery sposoby <u>wyprowadzania</u> danych na stronê:<br>
+1. z u¿yciem dokument.write()<br>
+2. z u¿yciem okienka alert()<br>
+3. do okienek formularza<br>
+4. do tabeli<br>
+Co to jest funkcja?<br>
+1. Jest to zbiór zgrupowanych instrukcji, które mo¿emy uruchamiaæ poprzez podanie ich nazwy,<br>
+2. Ka¿da funkcja po wywo³aniu wykonuje swój wewnêtrzny kod,<br>
+3. Funkcja mo¿e mieæ argumenty, które wchodz¹ do wnêtrza funkcji i s¹ tam przetwarzane np. suma_kry(a, b),<br>
+4. Mo¿e(nie zawsze) zwróciæ obliczon¹ wartoœæ zapisan¹ po s³owie kluczowym return.<br>
+Wybrane metody obiektu document<br>
+
+<table border="1">
+<tr>
+<td><center>metoda</center></td><td><center>opis</center></td>
+</tr>
+<tr>
+<td>getElementById(„id”)</td><td>dostêp do wszystkich elementów o konkretnej wartoœci atrybutu id</td>
+</tr>
+<tr>
+<td>getElementByTagName(„znacznik”)</td><td>dostêp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+</tr>
+<tr>
+<td>getElementByName(„nazwa”)</td><td>dostêp do wszystkich elementów o konkretnej wartoœci atrybutu</td>
+<u>W³aœciwoœci tak pobranego elementu to:</u>
+- innerHTML – umo¿liwia okreœlenie kodu HTML który zostanie umieszczony w elemencie np. w tabeli,
+- innerText – umo¿liwia okreœlenie ci¹gu znaków który zostanie umieszczony w elemencie,
+- className – umo¿liwia okreœlenie klasy CSS u¿ytej do prezentacji elementu.
+</body>

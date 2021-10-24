@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+Obliczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_wrona(a,b)
+{
+ a_wro=parseFloat(a)
+ b_wro=parseFloat(b)
+ pole_wynik=a_wro * b_wro
+ document.getElementsByName('pole_tr')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_wrona(a,b)
+{
+ a_wro=parseFloat(a)
+ b_wro=parseFloat(b)
+ Obw_wynik=a_wro+b_wro+a_wro+b_wro
+ document.getElementsByName('obwod_tr')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij_wrona()
+{
+window.close()
+}
+</script>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_wrona(this.wysokosc.value,this.dlugosc.value);
+Pole_wrona(this.wysokosc.value,this.dlugosc.value);return false">
+Podaj a=
+<input size="6" name="wysokosc">
+Podaj b=
+<input size="6" name="dlugosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pp=
+<input size="6" name="pole_tr">
+Obw=
+<input size="6" name="obwod_tr">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
+</body>
+</html>

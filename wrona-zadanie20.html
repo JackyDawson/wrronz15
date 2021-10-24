@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>
+Obliczenie pola oraz obwodu trapez równoramiennego
+</title>
+ <script language="JavaScript">
+function Pow_wrona(a,b,h)
+{
+ a_wro=parseFloat(a)
+ b_wro=parseFloat(b)
+ h_wro=parseFloat(h)
+ pole_wynik=(a_wro+b_wro)*(1/2*h_wro)
+ document.getElementsByName('pole_wro')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obw_wrona(a,b,h)
+{
+ a_wro=parseFloat(a)
+ b_wro=parseFloat(b)
+ h_wro=parseFloat(h)
+ d=Math.abs(a-b)
+ e=1/2*d
+ c=Math.pow(e,2)+Math.pow(h,2)
+ c_wro=Math.sqrt(c)
+ Obw_wynik=a_wro+b_wro+c_wro+c_wro
+ document.getElementsByName('obw_wro')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij_wrona()
+{
+window.close()
+}
+</script>
+Obliczenie pola oraz obwodu trapez równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="obw_wrona(this.wys.value,this.dl.value,this.wysokosc.value);
+Pow_wrona(this.wys.value,this.dl.value,this.wysokosc.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+Podaj h=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pp=
+<input size="6" name="pole_wro">
+Obw=
+<input size="6" name="obw_wro">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
+</body>
+</html>
