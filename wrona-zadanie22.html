@@ -1,0 +1,49 @@
+<html> 
+<head> 
+  <script language="JavaScript">
+function V(odl_wro,kat_wro)
+{
+    s_wro=parseFloat(odl_wro)
+    h_wro=parseFloat(kat_wro)
+    wysokosc=Math.abs(Math.sqrt(Math.pow(h_wro, 2)-Math.pow(s_wro, 2)))
+    document.getElementsByName('dop')[0].value=wysokosc.toFixed(2);  
+                                                    
+    
+ }
+function Pc(odl_wro,kat_wro)
+{ 
+    s_wro=parseFloat(odl_wro)
+    h_wro=parseFloat(kat_wro)
+    wysokosc=Math.sqrt(Math.pow(h_wro,2)-Math.pow(s_wro,2))
+   katstartu=((Math.atan2(s_wro,wysokosc))/Math.PI)*180 
+   document.getElementsByName('kat')[0].value=katstartu.toFixed(2);
+   
+}
+       </script>
+</head> 
+<body> 
+<script type="text/javascript">
+function okno_zamknij_wrona()
+{
+window.close()
+}
+</script>
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.odleglosc.value,this.lot.value); Pc(this.odleglosc.value,this.lot.value);return false">  
+ Podaj dystans miedzy Arturem  a Dawidem
+<input  size="6"  name="odleglosc">
+Podaj długosc lotu:
+<input  size="6"  name="lot">
+<br>
+<br>
+<input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+ Wysokość w pionie = 
+<input  size="6"  name="dop">
+ Kąt wylotu=
+<input  size="6"  name="kat">
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
+</body> 
+</html>
