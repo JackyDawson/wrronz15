@@ -1,0 +1,34 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_wrona()
+{
+window.close()
+}
+35
+ function router(model_k,ilosc_k,ip_k)//początek konstruktora
+{
+this.model=model_k;
+this.ilosc=ilosc_k;
+this.ip=ip_k;
+}//koniec konstruktora
+ router.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.model + ' ' + this.ilosc+ ' ' + this.ip);
+ };
+var router1 = new router("TPLink", "3x ethernet", "192.168.1.1"); // nowy obiekt osoba1
+var router2 = new router('Xiaomi', '4x ethernet', '10.0.10.1');
+router1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+router2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("router pierwszy"+" "+router1.model+" "+router1.ilosc+" "+router1.ip);
+ document.write("router drugi"+" "+router2.model+" "+router2.ilosc+" "+router2.ip);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_wrona()"/>
+</body>
+</html>
